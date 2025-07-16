@@ -1,0 +1,46 @@
+Problem Statement: Tourist Management System Using Hybrid Inheritance (Python)
+You are required to develop a basic Tourist Management System in Python that collects and validates tourist information, then generates a unique tourist ID. The system must be designed using hybrid inheritance to demonstrate understanding of object-oriented programming concepts.
+
+Requirements:
+Class Structure:
+
+Person (base class): Stores common attributes such as name, age, and phone_number.
+
+TravelDetails (base class): Stores the travel_mode of the tourist.
+
+Tourist (derived class): Inherits from both Person and TravelDetails (hybrid inheritance) and represents a tourist.
+
+TouristManagementSystem (helper class): Contains methods for validating tourist details and generating a tourist ID.
+
+Validation Rules:
+
+The name must contain only alphabetic characters and spaces (no digits or special characters).
+
+The age must be an integer between 60 and 99 inclusive.
+
+The phone_number must be exactly 10 digits long.
+
+The travel_mode must be either "Airway" or "Roadway" (case-insensitive).
+
+Functionality:
+
+The system should interactively collect input from the user.
+
+It should validate the input without using exception handling — instead, validations return status and error messages.
+
+Upon successful validation, the system generates a unique tourist ID by concatenating:
+
+The first two letters of the name (uppercase),
+
+The age,
+
+The first two digits of the phone number,
+
+The first two letters of the travel mode (uppercase).
+
+User Experience:
+
+If validation fails, an appropriate error message should be displayed.
+
+If validation succeeds, the generated tourist ID should be displayed.
+
