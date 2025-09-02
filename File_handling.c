@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<string.h>
 int main()
 {
    
     FILE* fptr;
 
     // creating file using fopen() access mode "w"
-    fptr = fopen("abc.txt", "w");
+    fptr = fopen("QWER.txt", "w");
 
-    // checking if the file is created
-    if (fptr == NULL) {
+    if (fptr == NULL) 
+    {
         printf("Error in file opening");
         exit(0);
     }
